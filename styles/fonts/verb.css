@@ -1,0 +1,153 @@
+/* All OpenType features and all extended glyphs have been removed.
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Yellow Design Studio. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2012 Yellow Design Studio. www.yellowdesignstudio.com
+ *
+ */
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbExtralight-webfont.eot');
+  src: url('/styles/fonts/VerbExtralight-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbExtralight-webfont.woff') format("woff"), url('/styles/fonts/VerbExtralight-webfont.ttf') format("truetype"), url('/styles/fonts/VerbExtralight-webfont.svg#verb_extralightregular') format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbExtralight-Italic-webfont.eot');
+  src: url('/styles/fonts/VerbExtralight-Italic-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbExtralight-Italic-webfont.woff') format("woff"), url('/styles/fonts/VerbExtralight-Italic-webfont.ttf') format("truetype"), url('/styles/fonts/VerbExtralight-Italic-webfont.svg#verb_extralightitalic') format("svg");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbLight-webfont.eot');
+  src: url('/styles/fonts/VerbLight-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbLight-webfont.woff') format("woff"), url('/styles/fonts/VerbLight-webfont.ttf') format("truetype"), url('/styles/fonts/VerbLight-webfont.svg#verb_lightregular') format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbLight-Italic-webfont.eot');
+  src: url('/styles/fonts/VerbLight-Italic-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbLight-Italic-webfont.woff') format("woff"), url('/styles/fonts/VerbLight-Italic-webfont.ttf') format("truetype"), url('/styles/fonts/VerbLight-Italic-webfont.svg#verb_lightitalic') format("svg");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbRegular-webfont.eot');
+  src: url('/styles/fonts/VerbRegular-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbRegular-webfont.woff') format("woff"), url('/styles/fonts/VerbRegular-webfont.ttf') format("truetype"), url('/styles/fonts/VerbRegular-webfont.svg#verb_regularregular') format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbRegular-Italic-webfont.eot');
+  src: url('/styles/fonts/VerbRegular-Italic-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbRegular-Italic-webfont.woff') format("woff"), url('/styles/fonts/VerbRegular-Italic-webfont.ttf') format("truetype"), url('/styles/fonts/VerbRegular-Italic-webfont.svg#verb_regularitalic') format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbMedium-webfont.eot');
+  src: url('/styles/fonts/VerbMedium-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbMedium-webfont.woff') format("woff"), url('/styles/fonts/VerbMedium-webfont.ttf') format("truetype"), url('/styles/fonts/VerbMedium-webfont.svg#verb_mediumregular') format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbMedium-Italic-webfont.eot');
+  src: url('/styles/fonts/VerbMedium-Italic-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbMedium-Italic-webfont.woff') format("woff"), url('/styles/fonts/VerbMedium-Italic-webfont.ttf') format("truetype"), url('/styles/fonts/VerbMedium-Italic-webfont.svg#verb_mediumitalic') format("svg");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbSemibold-webfont.eot');
+  src: url('/styles/fonts/VerbSemibold-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbSemibold-webfont.woff') format("woff"), url('/styles/fonts/VerbSemibold-webfont.ttf') format("truetype"), url('/styles/fonts/VerbSemibold-webfont.svg#verb_semiboldregular') format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbSemibold-Italic-webfont.eot');
+  src: url('/styles/fonts/VerbSemibold-Italic-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbSemibold-Italic-webfont.woff') format("woff"), url('/styles/fonts/VerbSemibold-Italic-webfont.ttf') format("truetype"), url('/styles/fonts/VerbSemibold-Italic-webfont.svg#verb_semibolditalic') format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbBold-webfont.eot');
+  src: url('/styles/fonts/VerbBold-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbBold-webfont.woff') format("woff"), url('/styles/fonts/VerbBold-webfont.ttf') format("truetype"), url('/styles/fonts/VerbBold-webfont.svg#verb_regularbold') format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbBold-Italic-webfont.eot');
+  src: url('/styles/fonts/VerbBold-Italic-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbBold-Italic-webfont.woff') format("woff"), url('/styles/fonts/VerbBold-Italic-webfont.ttf') format("truetype"), url('/styles/fonts/VerbBold-Italic-webfont.svg#verb_regularbold_italic') format("svg");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbExtrabold-webfont.eot');
+  src: url('/styles/fonts/VerbExtrabold-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbExtrabold-webfont.woff') format("woff"), url('/styles/fonts/VerbExtrabold-webfont.ttf') format("truetype"), url('/styles/fonts/VerbExtrabold-webfont.svg#verb_extraboldregular') format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbExtrabold-Italic-webfont.eot');
+  src: url('/styles/fonts/VerbExtrabold-Italic-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbExtrabold-Italic-webfont.woff') format("woff"), url('/styles/fonts/VerbExtrabold-Italic-webfont.ttf') format("truetype"), url('/styles/fonts/VerbExtrabold-Italic-webfont.svg#verb_extrabolditalic') format("svg");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbBlack-webfont.eot');
+  src: url('/styles/fonts/VerbBlack-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbBlack-webfont.woff') format("woff"), url('/styles/fonts/VerbBlack-webfont.ttf') format("truetype"), url('/styles/fonts/VerbBlack-webfont.svg#verb_blackregular') format("svg");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbBlack-Italic-webfont.eot');
+  src: url('/styles/fonts/VerbBlack-Italic-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbBlack-Italic-webfont.woff') format("woff"), url('/styles/fonts/VerbBlack-Italic-webfont.ttf') format("truetype"), url('/styles/fonts/VerbBlack-Italic-webfont.svg#verb_blackitalic') format("svg");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbUltra-webfont.eot');
+  src: url('/styles/fonts/VerbUltra-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbUltra-webfont.woff') format("woff"), url('/styles/fonts/VerbUltra-webfont.ttf') format("truetype"), url('/styles/fonts/VerbUltra-webfont.svg#verbultra') format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbUltra-Italic-webfont.eot');
+  src: url('/styles/fonts/VerbUltra-Italic-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbUltra-Italic-webfont.woff') format("woff"), url('/styles/fonts/VerbUltra-Italic-webfont.ttf') format("truetype"), url('/styles/fonts/VerbUltra-Italic-webfont.svg#verb_ultraitalic') format("svg");
+  font-weight: 900;
+  font-style: italic;
+}

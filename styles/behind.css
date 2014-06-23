@@ -1,0 +1,429 @@
+/* flatLand! - hire me !
+ *
+ * SASS/COMPASS/CSS Document - /styles/behind.sass
+ * Screen & responsive styles
+ * coded by leny@flatLand!
+ * started at 28/04/13
+ */
+/* line 17, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* All OpenType features and all extended glyphs have been removed.
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Yellow Design Studio. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2012 Yellow Design Studio. www.yellowdesignstudio.com
+ *
+ */
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbExtralight-webfont.eot');
+  src: url('/styles/fonts/VerbExtralight-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbExtralight-webfont.woff') format("woff"), url('/styles/fonts/VerbExtralight-webfont.ttf') format("truetype"), url('/styles/fonts/VerbExtralight-webfont.svg#verb_extralightregular') format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbExtralight-Italic-webfont.eot');
+  src: url('/styles/fonts/VerbExtralight-Italic-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbExtralight-Italic-webfont.woff') format("woff"), url('/styles/fonts/VerbExtralight-Italic-webfont.ttf') format("truetype"), url('/styles/fonts/VerbExtralight-Italic-webfont.svg#verb_extralightitalic') format("svg");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbLight-webfont.eot');
+  src: url('/styles/fonts/VerbLight-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbLight-webfont.woff') format("woff"), url('/styles/fonts/VerbLight-webfont.ttf') format("truetype"), url('/styles/fonts/VerbLight-webfont.svg#verb_lightregular') format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbLight-Italic-webfont.eot');
+  src: url('/styles/fonts/VerbLight-Italic-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbLight-Italic-webfont.woff') format("woff"), url('/styles/fonts/VerbLight-Italic-webfont.ttf') format("truetype"), url('/styles/fonts/VerbLight-Italic-webfont.svg#verb_lightitalic') format("svg");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbRegular-webfont.eot');
+  src: url('/styles/fonts/VerbRegular-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbRegular-webfont.woff') format("woff"), url('/styles/fonts/VerbRegular-webfont.ttf') format("truetype"), url('/styles/fonts/VerbRegular-webfont.svg#verb_regularregular') format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbRegular-Italic-webfont.eot');
+  src: url('/styles/fonts/VerbRegular-Italic-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbRegular-Italic-webfont.woff') format("woff"), url('/styles/fonts/VerbRegular-Italic-webfont.ttf') format("truetype"), url('/styles/fonts/VerbRegular-Italic-webfont.svg#verb_regularitalic') format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbMedium-webfont.eot');
+  src: url('/styles/fonts/VerbMedium-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbMedium-webfont.woff') format("woff"), url('/styles/fonts/VerbMedium-webfont.ttf') format("truetype"), url('/styles/fonts/VerbMedium-webfont.svg#verb_mediumregular') format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbMedium-Italic-webfont.eot');
+  src: url('/styles/fonts/VerbMedium-Italic-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbMedium-Italic-webfont.woff') format("woff"), url('/styles/fonts/VerbMedium-Italic-webfont.ttf') format("truetype"), url('/styles/fonts/VerbMedium-Italic-webfont.svg#verb_mediumitalic') format("svg");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbSemibold-webfont.eot');
+  src: url('/styles/fonts/VerbSemibold-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbSemibold-webfont.woff') format("woff"), url('/styles/fonts/VerbSemibold-webfont.ttf') format("truetype"), url('/styles/fonts/VerbSemibold-webfont.svg#verb_semiboldregular') format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbSemibold-Italic-webfont.eot');
+  src: url('/styles/fonts/VerbSemibold-Italic-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbSemibold-Italic-webfont.woff') format("woff"), url('/styles/fonts/VerbSemibold-Italic-webfont.ttf') format("truetype"), url('/styles/fonts/VerbSemibold-Italic-webfont.svg#verb_semibolditalic') format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbBold-webfont.eot');
+  src: url('/styles/fonts/VerbBold-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbBold-webfont.woff') format("woff"), url('/styles/fonts/VerbBold-webfont.ttf') format("truetype"), url('/styles/fonts/VerbBold-webfont.svg#verb_regularbold') format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbBold-Italic-webfont.eot');
+  src: url('/styles/fonts/VerbBold-Italic-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbBold-Italic-webfont.woff') format("woff"), url('/styles/fonts/VerbBold-Italic-webfont.ttf') format("truetype"), url('/styles/fonts/VerbBold-Italic-webfont.svg#verb_regularbold_italic') format("svg");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbExtrabold-webfont.eot');
+  src: url('/styles/fonts/VerbExtrabold-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbExtrabold-webfont.woff') format("woff"), url('/styles/fonts/VerbExtrabold-webfont.ttf') format("truetype"), url('/styles/fonts/VerbExtrabold-webfont.svg#verb_extraboldregular') format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbExtrabold-Italic-webfont.eot');
+  src: url('/styles/fonts/VerbExtrabold-Italic-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbExtrabold-Italic-webfont.woff') format("woff"), url('/styles/fonts/VerbExtrabold-Italic-webfont.ttf') format("truetype"), url('/styles/fonts/VerbExtrabold-Italic-webfont.svg#verb_extrabolditalic') format("svg");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbBlack-webfont.eot');
+  src: url('/styles/fonts/VerbBlack-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbBlack-webfont.woff') format("woff"), url('/styles/fonts/VerbBlack-webfont.ttf') format("truetype"), url('/styles/fonts/VerbBlack-webfont.svg#verb_blackregular') format("svg");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbBlack-Italic-webfont.eot');
+  src: url('/styles/fonts/VerbBlack-Italic-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbBlack-Italic-webfont.woff') format("woff"), url('/styles/fonts/VerbBlack-Italic-webfont.ttf') format("truetype"), url('/styles/fonts/VerbBlack-Italic-webfont.svg#verb_blackitalic') format("svg");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbUltra-webfont.eot');
+  src: url('/styles/fonts/VerbUltra-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbUltra-webfont.woff') format("woff"), url('/styles/fonts/VerbUltra-webfont.ttf') format("truetype"), url('/styles/fonts/VerbUltra-webfont.svg#verbultra') format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verb";
+  src: url('/styles/fonts/VerbUltra-Italic-webfont.eot');
+  src: url('/styles/fonts/VerbUltra-Italic-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/VerbUltra-Italic-webfont.woff') format("woff"), url('/styles/fonts/VerbUltra-Italic-webfont.ttf') format("truetype"), url('/styles/fonts/VerbUltra-Italic-webfont.svg#verb_ultraitalic') format("svg");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on October 25, 2012 08:06:55 AM America/New_York */
+@font-face {
+  font-family: "SourceCodePro";
+  src: url('/styles/fonts/SourceCodePro-ExtraLight-webfont.eot');
+  src: url('/styles/fonts/SourceCodePro-ExtraLight-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/SourceCodePro-ExtraLight-webfont.woff') format("woff"), url('/styles/fonts/SourceCodePro-ExtraLight-webfont.ttf') format("truetype"), url('/styles/fonts/SourceCodePro-ExtraLight-webfont.svg#SourceCodeProExtraLight') format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceCodePro";
+  src: url('/styles/fonts/SourceCodePro-Light-webfont.eot');
+  src: url('/styles/fonts/SourceCodePro-Light-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/SourceCodePro-Light-webfont.woff') format("woff"), url('/styles/fonts/SourceCodePro-Light-webfont.ttf') format("truetype"), url('/styles/fonts/SourceCodePro-Light-webfont.svg#SourceCodeProLight') format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceCodePro";
+  src: url('/styles/fonts/SourceCodePro-Regular-webfont.eot');
+  src: url('/styles/fonts/SourceCodePro-Regular-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/SourceCodePro-Regular-webfont.woff') format("woff"), url('/styles/fonts/SourceCodePro-Regular-webfont.ttf') format("truetype"), url('/styles/fonts/SourceCodePro-Regular-webfont.svg#SourceCodeProRegular') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceCodePro";
+  src: url('/styles/fonts/SourceCodePro-Semibold-webfont.eot');
+  src: url('/styles/fonts/SourceCodePro-Semibold-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/SourceCodePro-Semibold-webfont.woff') format("woff"), url('/styles/fonts/SourceCodePro-Semibold-webfont.ttf') format("truetype"), url('/styles/fonts/SourceCodePro-Semibold-webfont.svg#SourceCodeProSemibold') format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceCodePro";
+  src: url('/styles/fonts/SourceCodePro-Bold-webfont.eot');
+  src: url('/styles/fonts/SourceCodePro-Bold-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/SourceCodePro-Bold-webfont.woff') format("woff"), url('/styles/fonts/SourceCodePro-Bold-webfont.ttf') format("truetype"), url('/styles/fonts/SourceCodePro-Bold-webfont.svg#SourceCodeProBold') format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceCodePro";
+  src: url('/styles/fonts/SourceCodePro-Black-webfont.eot');
+  src: url('/styles/fonts/SourceCodePro-Black-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/SourceCodePro-Black-webfont.woff') format("woff"), url('/styles/fonts/SourceCodePro-Black-webfont.ttf') format("truetype"), url('/styles/fonts/SourceCodePro-Black-webfont.svg#SourceCodeProBlack') format("svg");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WebHostingHub";
+  src: url('/styles/fonts/webhostinghub-glyphs-webfont.eot');
+  src: url('/styles/fonts/webhostinghub-glyphs-webfont.eot?#iefix') format("embedded-opentype"), url('/styles/fonts/webhostinghub-glyphs-webfont.woff') format("woff"), url('/styles/fonts/webhostinghub-glyphs-webfont.ttf') format("truetype"), url('/styles/fonts/webhostinghub-glyphs-webfont.svg#WebHostingHubGlyphsRegular') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 30, behind.sass */
+html {
+  background: gray url('/styles/img/grey_wash_wall.png?1363722619') top left repeat;
+}
+
+/* line 33, behind.sass */
+body {
+  font: 400 62.5%/1.25 "Verb", Verdana, Helvetica, Arial, sans-serif;
+}
+
+/* line 36, behind.sass */
+#holder {
+  position: relative;
+}
+
+/* line 39, behind.sass */
+div#top {
+  position: fixed;
+  background: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1px 0;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+/* line 48, behind.sass */
+div#top header {
+  float: left;
+  margin: 14px 10px 9px 20px;
+}
+/* line 51, behind.sass */
+div#top header h1 {
+  position: relative;
+  width: 290px;
+  color: white;
+}
+/* line 55, behind.sass */
+div#top header h1 span.one {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: top right 50%;
+  -moz-transform-origin: top right 50%;
+  -ms-transform-origin: top right 50%;
+  -o-transform-origin: top right 50%;
+  transform-origin: top right 50%;
+  font: 200 2em "Verb", Verdana, Helvetica, Arial, sans-serif;
+}
+/* line 64, behind.sass */
+div#top header h1 em.two {
+  position: absolute;
+  top: 0;
+  left: 1.2em;
+  font: 400 2.8em/1 "Verb", Verdana, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+}
+/* line 71, behind.sass */
+div#top header h1 span.three {
+  display: inline-block;
+  font: 200 1.5em "Verb", Verdana, Helvetica, Arial, sans-serif;
+  margin: 2em 0 0 0.35em;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 76, behind.sass */
+div#top header h1 em.four {
+  display: inline-block;
+  font: 500 2.2em "Verb", Verdana, Helvetica, Arial, sans-serif;
+}
+/* line 79, behind.sass */
+div#top section {
+  margin: 10px 0 0;
+  font: 300 1.2em/1.5 "Verb", Verdana, Helvetica, Arial, sans-serif;
+  color: #e6e6e6;
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+div#top section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 84, behind.sass */
+div#top section a {
+  text-decoration: none;
+  color: #93cefe;
+}
+
+/* line 89, behind.sass */
+#code #page, #code #styles, #code #scripts {
+  width: 100%;
+  float: left;
+  padding: 90px 20px 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 94, behind.sass */
+#code #page .content, #code #styles .content, #code #scripts .content {
+  background: #282828;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  overflow: scroll;
+  -webkit-box-shadow: inset 0 0 20px black;
+  -moz-box-shadow: inset 0 0 20px black;
+  box-shadow: inset 0 0 20px black;
+}
+/* line 100, behind.sass */
+#code #page {
+  background: rgba(200, 228, 3, 0.15);
+}
+/* line 102, behind.sass */
+#code #styles {
+  background: rgba(3, 109, 194, 0.15);
+}
+/* line 104, behind.sass */
+#code #scripts {
+  background: rgba(242, 126, 3, 0.15);
+}
+
+/* line 108, behind.sass */
+pre span.loading {
+  font: normal 1.2em "SourceCodePro", monaco, courrier, monospace;
+  color: #c5c5c5;
+}
+
+/* line 112, behind.sass */
+code {
+  font: normal 1.2em "SourceCodePro", monaco, courrier, monospace;
+}
