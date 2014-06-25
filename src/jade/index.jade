@@ -214,8 +214,9 @@ html( lang="fr_BE" )
                         | Je fais aussi le café, mais là, par contre, je suis un peu moins bon.
 
             section#invite
-                p
-                    | Que ce soit pour de la sous-traitance simple, ou pour rejoindre un projet en manque de bras, voire pour vous conseiller dans l'élaboration d'un projet, n'hésitez pas à me contacter.
+                div
+                    p
+                        | Que ce soit pour de la sous-traitance simple, ou pour rejoindre un projet en manque de bras, voire pour vous conseiller dans l'élaboration d'un projet, n'hésitez pas à me contacter.
 
             section#socials
                 ul
@@ -250,7 +251,11 @@ html( lang="fr_BE" )
                         = " "
                         | ou pigeon voyageur (je n'assure pas les retours de pigeon, mes chats les mangent).
                     p
-                        | Vous pouvez aussi me trouver à <a href="http://laforge-coworking.be" rel="external">la Forge</a> (espace de coworking Liégeois), les mardis et jeudis.
+                        | Vous pouvez aussi me trouver régulièrement à
+                        = " "
+                        a( href="http://laforge-coworking.be", rel="external" ) la Forge
+                        = " "
+                        | (espace de coworking Liégeois).
 
             footer
                 p
@@ -261,7 +266,7 @@ html( lang="fr_BE" )
             a#behind( href="behind.html" )
                 span consultez le code !
 
-        script( src="js/script.js", async )
+        // script( src="js/script.js", async )
         script.
             var _gaq = _gaq || [];
             _gaq.push( [ '_setAccount', 'UA-39717980-2' ] );
