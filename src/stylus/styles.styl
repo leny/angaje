@@ -1,0 +1,298 @@
+/* flatLand! - hire me !
+*
+* SASS/COMPASS/CSS Document - /styles/screen.sass
+* Screen & responsive styles
+* coded by leny@flatLand!
+* started in sass/compass at 28/04/13
+* rewrited in stylus/kouto-swiss at 25/06/14
+*/
+
+// --- imports
+
+@import "kouto-swiss"
+
+// --- resets
+
+meyer-reset()
+box-sizing-reset()
+
+// --- fonts
+
+// TODO : check if all sizes are really used
+ExtraLight = 100
+font-face( "FiraSans", "fonts/firasans/FiraSans-ExtraLight", ExtraLight, formats: eot woff )
+Light = 200
+font-face( "FiraSans", "fonts/firasans/FiraSans-Light", Light, formats: eot woff )
+// normal
+font-face( "FiraSans", "fonts/firasans/FiraSans-Regular", formats: eot woff )
+Medium = 400
+font-face( "FiraSans", "fonts/firasans/FiraSans-Medium", Medium, formats: eot woff )
+SemiBold = 500
+font-face( "FiraSans", "fonts/firasans/FiraSans-SemiBold", SemiBold, formats: eot woff )
+Bold = 600
+font-face( "FiraSans", "fonts/firasans/FiraSans-Bold", Bold, formats: eot woff )
+FiraSans = "FiraSans", "Fira Sans", "FiraSansOT", font-stack( "Helvetica" )
+font-face( "WebHostingHub", "fonts/webhostinghub/webhostinghub-glyphs-webfont", formats: eot ttf svg )
+Glyphs = "WebHostingHub", "WebHostingHub-Glyphs"
+
+// --- mixins
+
+geometricBox( bcgColor, topAngle, bottomAngle, zIndex, verticalShift = -10px, height = 50px )
+    position relative
+    background bcgColor
+    z-index zIndex
+    &:before, &:after
+        content ""
+        position absolute
+        display block
+        width 150%
+        height height
+        background bcgColor
+        z-index -1
+        backface-visibility hidden
+    &:before
+        top verticalShift
+        left -50px
+        transform rotate( topAngle )
+        box-shadow 0 -5px 5px rgba( black, 0.25 )
+    &:after
+        bottom verticalShift
+        left -50px
+        transform rotate( bottomAngle )
+        box-shadow 0 5px 5px rgba( black, 0.25 )
+
+diamond( innerSize, radius = 0 )
+    outerSize = math( innerSize * innerSize * 2, "sqrt" )
+    position relative
+    width innerSize
+    height innerSize
+    box-sizing border-box
+    &:before
+        position absolute
+        display block
+        content ""
+        width outerSize
+        height outerSize
+        top ( outerSize * -1 / 2 ) + ( innerSize / 2 )
+        left ( outerSize * -1 / 2 ) + ( innerSize / 2 )
+        background white
+        box-shadow 0 0 10px rgba( black, 0.5 )
+        z-index -1
+        transform rotate( -45deg )
+        border-radius radius
+
+// --- vars
+
+linkColor = #440293
+visitedColor = #440293
+hoverColor = #7303f7
+
+introductionColor = #c8e403
+presentationColor = tint( #036dc2, 5% )
+skillsColor = #f27e03
+inviteColor = #02a976
+contactColor = #2e9a02
+
+footerLinkColor = #93cefe
+
+// --- styles
+
+*
+    -webkit-font-smoothing antialiased
+
+html
+    background-color gray
+    retina-image( "images/grey_wash_wall.png", 350px 259px, "_@2X" )
+
+body
+    font Medium 62.5%/1.25 FiraSans
+
+#holder
+    position relative
+    overflow hidden
+
+header
+    position relative
+    background black
+    padding 1px 0
+    box-shadow 0 0 20px rgba( black, 0.5 )
+    z-index 20
+    h1
+        position relative
+        width 290px
+        margin 10px auto 12px
+        color white
+        span.one
+            position absolute
+            top .05em
+            left -1.35em
+            display inline-block
+            font Light 2.2em/1 FiraSans
+            text-transform uppercase
+            transform rotate( -90deg )
+            transform-origin top right
+        em.two
+            position absolute
+            top 0
+            right 0
+            font SemiBold 3.5em/1 FiraSans
+            text-transform uppercase
+            display inline-block
+        span.three
+            display inline-block
+            font Light 1.8em FiraSans
+            margin 1.7em .2em 0 0
+            transform rotate( 180deg )
+        em.four
+            position absolute
+            top 1.05em
+            right 0
+            font SemiBold 2.5em FiraSans
+    &:after
+        content ""
+        display block
+        position absolute
+        left 50%
+        margin-left -20px
+        triangle( down, 20px, black )
+        z-index 10
+
+#figure-holder
+    padding 8px 0
+    figure
+        position relative
+        display block
+        width 100px
+        height 100px
+        padding 5px
+        margin 0 auto
+        background white
+        border-radius 5px
+        box-shadow 0 0 10px rgba( black, 0.5 )
+        transform rotate( -3deg )
+        backface-visibility hidden
+        img
+            max-width 100%
+            border-radius 3px
+        figcaption
+            display none
+
+section
+    padding 1px 0
+    div
+        position relative
+        margin 20px 20px 30px
+        &:before
+            content ""
+            display block
+            font normal 80px/1 Glyphs
+            opacity .1
+            position absolute
+            bottom 10px
+            left 0
+        p
+            font normal 1.4em/1.35 FiraSans
+            margin 0.35em auto 0.7em
+            strong
+                font-weight Bold
+            em
+                font-weight SemiBold
+    &[id="introduction"]
+        geometricBox( introductionColor, 2deg, 1deg, 10 )
+        div:before
+            content: ""
+    &[id="presentation"]
+        geometricBox( presentationColor, -1deg, 3deg, 20 )
+        div:before
+            content: ""
+    &[id="skills"]
+        geometricBox( skillsColor, 1deg, -2deg, 30 )
+        div:before
+            content: ""
+    &[id="invite"]
+        geometricBox( inviteColor, -1deg, 1deg, 40 )
+        div:before
+            content: ""
+    &[id="socials"]
+        padding 40px 0 20px
+        ul
+            margin 20px 10px 0
+            padding 1px 0
+            text-align center
+            li
+                display inline-block
+                margin 0 25px 15px
+                a
+                    display inline-block
+                    text-decoration none
+                    diamond( 30px, 5px )
+                    &:after
+                        font normal 25px/30px Glyphs
+                        color gray
+                    span
+                        display none
+                    &[id="cv"]:after
+                        content ""
+                    &[id="twitter"]:after
+                        content ""
+                    &[id="facebook"]:after
+                        content ""
+                    &[id="github"]
+                        margin 0 auto 0 60px
+                        &:after
+                            content ""
+                    &[id="dribbble"]
+                        margin 0 60px 0 auto
+                        &:after
+                            content ""
+                    &[id="linkedin"]:after
+                        content ""
+                    &[id="viadeo"]:after
+                        content ""
+    &[id="contact"]
+        geometricBox( contactColor, 2deg, -1deg, 40 )
+        margin 30px auto 0
+        &:after
+            display none
+        div:before
+            content ""
+        a
+            color linkColor
+            text-decoration none
+            transition color .25s ease-in-out
+            &:visited
+            &:active
+                color visitedColor
+            &:hover
+                color hoverColor
+
+footer
+    position relative
+    background black
+    padding 1px 0
+    box-shadow 0 0 20px rgba( black, 0.5 )
+    z-index 80
+    p
+        margin 20px 20px 18px
+        font Light 1.2em FiraSans
+        color white
+        clear fix
+        a
+            float right
+            text-decoration none
+            color footerLinkColor
+    &:before
+        content ""
+        display block
+        position absolute
+        width 0
+        height 0
+        left 50%
+        top -40px
+        margin-left -20px
+        border 20px solid transparent
+        border-bottom-color black
+        z-index 10
+
+#behind
+    display none
