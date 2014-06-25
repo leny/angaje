@@ -24,7 +24,7 @@ font-face( "FiraSans", "fonts/firasans/FiraSans-ExtraLight", ExtraLight, formats
 Light = 200
 font-face( "FiraSans", "fonts/firasans/FiraSans-Light", Light, formats: eot woff )
 // normal
-font-face( "FiraSans", "fonts/firasans/FiraSans-Regular", formats: eot woff )
+font-face( "FiraSans", "fonts/firasans/FiraSans-Book", formats: eot woff )
 Medium = 400
 font-face( "FiraSans", "fonts/firasans/FiraSans-Medium", Medium, formats: eot woff )
 SemiBold = 500
@@ -83,22 +83,30 @@ diamond( innerSize, radius = 0 )
 
 // --- vars
 
-linkColor = #440293
-visitedColor = #440293
-hoverColor = #7303f7
+cLink = #440293
+cVisitedLink = #440293
+cHoverColor = #7303f7
 
-introductionColor = #c8e403
-presentationColor = tint( #036dc2, 5% )
-skillsColor = #f27e03
-inviteColor = #02a976
-contactColor = #2e9a02
+cIntroduction = #c8e403
+cPresentation = tint( #036dc2, 5% )
+cSkills = #f27e03
+cInvite = #02a976
+cContact = #2e9a02
 
-footerLinkColor = #93cefe
+cFooterLink = #93cefe
+
+bkHorizontalPhones = media-query( screen, min-width 480px )
+bkVerticalTablets = media-query( screen, min-width 640px )
+bkLargerVerticalTablets = media-query( screen, min-width 768px )
+bkSmallDesktopScreens = media-query( screen, min-width 960px )
+bkMediumDesktopScreens = media-query( screen, min-width 1200px )
+bkBigDesktopScreens = media-query( screen, min-width 1600px )
 
 // --- styles
 
 *
     -webkit-font-smoothing antialiased
+    -webkit-text-size-adjust 100%
 
 html
     background-color gray
@@ -157,7 +165,7 @@ header
         triangle( down, 20px, black )
         z-index 10
 
-#figure-holder
+[id="figure-holder"]
     padding 8px 0
     figure
         position relative
@@ -191,26 +199,26 @@ section
             bottom 10px
             left 0
         p
-            font normal 1.4em/1.35 FiraSans
+            font Light 1.4em/1.35 FiraSans
             margin 0.35em auto 0.7em
             strong
                 font-weight Bold
             em
                 font-weight SemiBold
     &[id="introduction"]
-        geometricBox( introductionColor, 2deg, 1deg, 10 )
+        geometricBox( cIntroduction, 2deg, 1deg, 10 )
         div:before
             content: ""
     &[id="presentation"]
-        geometricBox( presentationColor, -1deg, 3deg, 20 )
+        geometricBox( cPresentation, -1deg, 3deg, 20 )
         div:before
             content: ""
     &[id="skills"]
-        geometricBox( skillsColor, 1deg, -2deg, 30 )
+        geometricBox( cSkills, 1deg, -2deg, 30 )
         div:before
             content: ""
     &[id="invite"]
-        geometricBox( inviteColor, -1deg, 1deg, 40 )
+        geometricBox( cInvite, -1deg, 1deg, 40 )
         div:before
             content: ""
     &[id="socials"]
@@ -250,21 +258,21 @@ section
                     &[id="viadeo"]:after
                         content ""
     &[id="contact"]
-        geometricBox( contactColor, 2deg, -1deg, 40 )
+        geometricBox( cContact, 2deg, -1deg, 40 )
         margin 30px auto 0
         &:after
             display none
         div:before
             content ""
         a
-            color linkColor
+            color cLink
             text-decoration none
             transition color .25s ease-in-out
             &:visited
             &:active
-                color visitedColor
+                color cVisitedLink
             &:hover
-                color hoverColor
+                color cHoverColor
 
 footer
     position relative
@@ -279,8 +287,11 @@ footer
         clear fix
         a
             float right
+            color cFooterLink
             text-decoration none
-            color footerLinkColor
+            transition color .25s ease-in-out
+            &:hover
+                color tint( cFooterLink, 33% )
     &:before
         content ""
         display block
@@ -294,5 +305,197 @@ footer
         border-bottom-color black
         z-index 10
 
-#behind
+[id="behind"]
     display none
+
+@media bkHorizontalPhones
+    section div:before
+        font normal 60px/1 Glyphs
+    section[id="socials"] ul
+        margin 20px 70px 0
+
+@media bkVerticalTablets
+    header
+        h1
+            position relative
+            width 510px
+            margin 17px auto 22px
+            color white
+            span.one
+                top .075em
+                left -1.65em
+                font Light 3.6em FiraSans
+            em.two
+                top 0
+                right 0
+                font normal 6.2em/1 FiraSans
+            span.three
+                font Light 3.2em FiraSans
+                margin 1.7em .2em 0 0
+            em.four
+                top 1.05em
+                right 0
+                font SemiBold 4.6em FiraSans
+    [id="figure-holder"]
+        padding 10px 0
+        figure
+            width 150px
+            height 150px
+    section
+        div
+            min-height 250px
+            padding 10px 0 10px 210px
+            &:before
+                bottom 20px
+                font normal 180px/1 Glyphs
+            p
+                font Light 1.6em/1.35 FiraSans
+        &[id="presentation"]
+        &[id="invite"]
+            div
+                padding 10px 210px 10px 0
+                &:before
+                    font normal 180px/1 Glyphs
+                    left auto
+                    right 20px
+        &[id="socials"]
+            min-height auto
+            ul
+                margin 30px 20px 10px
+                li
+                    margin 0 40px 15px
+                    a
+                        diamond( 50px, 5px )
+                        &:after
+                            font normal 40px/50px Glyphs
+                            color: gray
+                        &[id="github"]
+                            margin 0
+                        &[id="dribbble"]
+                            margin 0 67px 0 0
+                        &[id="linkedin"]
+                            margin 0 0 0 67px
+    footer p
+        margin 16px 20px 10px
+        font ExtraLight 1.6em FiraSans
+
+@media bkLargerVerticalTablets
+    section[id="socials"] ul
+        margin 45px 20px 10px
+        li
+            margin 0 60px 35px
+            a
+                &[id="dribbble"]
+                    margin 0 87px 0 0
+                &[id="linkedin"]
+                    margin 0 0 0 87px
+
+@media bkSmallDesktopScreens
+    [id="figure-holder"]
+        padding 5px 0 30px
+        figure
+            width 200px
+            height 200px
+    section div
+        min-height 150px
+        width 600px
+        margin 20px auto 30px
+        padding 20px 0 20px 130px
+        p
+            padding 0
+        &:before
+            font normal 100px/1 Glyphs
+    section[id="presentation"]
+    section[id="invite"]
+        div
+            padding 20px 130px 20px 0
+            &:before
+                font normal 100px/1 Glyphs
+                left auto
+                right 20px
+    section[id="socials"]
+        ul
+            margin 40px 10px 10px
+            li
+                margin 0 35px 35px
+                a
+                    &[id="dribbble"]
+                        margin 0
+                    &[id="linkedin"]
+                        margin 0
+    [id="behind"]
+        display block
+        position absolute
+        top -152.5px
+        right -152.5px
+        width 300px
+        height 300px
+        border 5px solid white
+        box-shadow 0 0 20px rgba( black, 0.75 ), inset 0 0 40px rgba( black, 1 )
+        border-radius 300px
+        background transparent url( "images/code.png" ) bottom left no-repeat
+        z-index 1000
+        text-decoration none
+        span
+            position absolute
+            display inline-block
+            bottom -70px
+            right 250px
+            color white
+            text-transform uppercase
+            font SemiBold 2em FiraSans
+            text-align right
+            text-shadow 0 0 20px rgba( black, 0.75 )
+            &:before
+                content ""
+                display block
+                font normal 20px/1.5 Glyphs
+
+@media bkMediumDesktopScreens
+    section
+        div
+            width 800px
+            margin 20px auto 50px
+            padding 20px 130px
+        &[id="presentation"]
+        &[id="invite"]
+            div
+                padding 20px 130px
+        &[id="introduction"]
+            geometricBox( cIntroduction, 2deg, 1deg, 10, -25px, 80px )
+
+        &[id="presentation"]
+            geometricBox( cPresentation, -1deg, 3deg, 20, -25px, 80px )
+
+        &[id="skills"]
+            geometricBox( cSkills, 1deg, -2deg, 30, -25px, 80px )
+
+        &[id="invite"]
+            geometricBox( cInvite, -1deg, 1deg, 40, -25px, 80px )
+
+        &[id="contact"]
+            geometricBox( cContact, 3deg, -1deg, 40, -20px, 80px )
+        &[id="socials"]
+            ul
+                margin 60px 10px 40px
+    footer
+        p
+            width 800px
+            margin 20px auto 18px
+
+@media bkBigDesktopScreens
+    section
+        &[id="introduction"]
+            geometricBox( cIntroduction, 2deg, 1deg, 10, -25px, 80px )
+
+        &[id="presentation"]
+            geometricBox( cPresentation, -1deg, 3deg, 20, -25px, 80px )
+
+        &[id="skills"]
+            geometricBox( cSkills, 1deg, -2deg, 30, -25px, 80px )
+
+        &[id="invite"]
+            geometricBox( cInvite, -1deg, 1deg, 40, -25px, 80px )
+
+        &[id="contact"]
+            geometricBox( cContact, 3deg, -1deg, 40, -30px, 110px )
