@@ -1,0 +1,17 @@
+{
+  "name": "angaje",
+  "description": "My 'hire me' page.",
+  "version": "2014.6.25",
+  "private": true,
+  "homepage": "http://hire.flatland.be",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leny/angaje.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4",
+    "grunt-ks-stylus": "~0.0",
+    "grunt-contrib-jade": "~0.11",
+    "grunt-contrib-watch": "~0.6"
+  }
+}
