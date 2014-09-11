@@ -2,9 +2,12 @@
 *
 * SASS/COMPASS/CSS Document - /styles/screen.sass
 * Screen & responsive styles
+*
 * coded by leny@flatLand!
+*
 * started in sass/compass at 28/04/13
 * rewrited in stylus/kouto-swiss at 25/06/14
+* fix code for kouto-swiss updates at 11/09/14
 */
 
 // --- imports
@@ -94,13 +97,6 @@ cInvite = #02a976
 cContact = #2e9a02
 
 cFooterLink = #93cefe
-
-bkHorizontalPhones = media-query( screen, min-width 480px )
-bkVerticalTablets = media-query( screen, min-width 640px )
-bkLargerVerticalTablets = media-query( screen, min-width 768px )
-bkSmallDesktopScreens = media-query( screen, min-width 960px )
-bkMediumDesktopScreens = media-query( screen, min-width 1200px )
-bkBigDesktopScreens = media-query( screen, min-width 1600px )
 
 // --- styles
 
@@ -308,13 +304,13 @@ footer
 [id="behind"]
     display none
 
-@media bkHorizontalPhones
++media-query( screen, min-width 480px )
     section div:before
         font normal 60px/1 Glyphs
     section[id="socials"] ul
         margin 20px 70px 0
 
-@media bkVerticalTablets
++media-query( screen, min-width 640px )
     header
         h1
             position relative
@@ -379,7 +375,7 @@ footer
         margin 16px 20px 10px
         font ExtraLight 1.6em FiraSans
 
-@media bkLargerVerticalTablets
++media-query( screen, min-width 768px )
     section[id="socials"] ul
         margin 45px 20px 10px
         li
@@ -390,7 +386,7 @@ footer
                 &[id="linkedin"]
                     margin 0 0 0 87px
 
-@media bkSmallDesktopScreens
++media-query( screen, min-width 960px )
     [id="figure-holder"]
         padding 5px 0 30px
         figure
@@ -452,7 +448,7 @@ footer
                 display block
                 font normal 20px/1.5 Glyphs
 
-@media bkMediumDesktopScreens
++media-query( screen, min-width 1200px )
     section
         div
             width 800px
@@ -484,7 +480,7 @@ footer
             width 800px
             margin 20px auto 18px
 
-@media bkBigDesktopScreens
++media-query( screen, min-width 1600px )
     section
         &[id="introduction"]
             geometricBox( cIntroduction, 2deg, 1deg, 10, -25px, 80px )
