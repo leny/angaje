@@ -5,8 +5,8 @@ Twitter: @leny_be
 Location: Liège, Belgium.
 
 /* SITE */
-Last update: 2013/05/03
+Last update: 2014/09/11
 Standards: html5 & css3
-Components: sass/compass, coffeescript/vanilla
+Components: stylus/kouto-swiss
 Methods: in-browser design
-Software: Sublime Text & CodeKit on MacOSX
+Software: Sublime Text & GruntJS on MacOSX
