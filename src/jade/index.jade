@@ -27,12 +27,9 @@ html( lang="fr-BE" )
         link( rel="shortcut icon", type="image/png", href="favicon.png" )/
 
         link( rel="author", href="humans.txt" )/
-        link( rel="stylesheet", href="assets/styles.css" )/
+        link( rel="stylesheet", href="assets/styles.min.css" )/
 
         != "<!--[if lt IE 9]>"
-            link( rel="stylesheet", href="styles/ie.css" )/
-            script.
-                var isIE = true;
             script( src="http://html5shiv.googlecode.com/svn/trunk/html5.js" )
         != "<![endif]-->"
 
@@ -63,7 +60,7 @@ html( lang="fr-BE" )
                         strong Pierre-Antoine Delnatte
                         | , j'ai
                         = " "
-                        time( datetime="1985-05-08" ) ±29 ans
+                        time( datetime="1985-05-08" ) ±31 ans
                         | , et si je m'affiche sur vos navigateurs, c'est parce que j'ai une super nouvelle à vous annoncer : je suis
                         = " "
                         strong freelance
@@ -130,11 +127,7 @@ html( lang="fr-BE" )
                         = " "
                         strong prof
                         = " "
-                        | (je donne cours de
-                        = " "
-                        abbr( title="Applications Internet Riches" ) RIA
-                        = " "
-                        | aux 3è années de la section web de l'
+                        | (je donne différents cours de développement web aux 1ères, 2è &amp; 3è années de la section web de l'
                         abbr( title="Haute École de la Province de Liège" ) HEPL
                         | /INPRES), je suis revenu dans ma Liège natale et me suis lancé comme freelance en 2013.
 
@@ -188,7 +181,7 @@ html( lang="fr-BE" )
                         strong Applicatif
                         = " "
                         | (
-                        em backbone.js
+                        em react
                         | /
                         em ember
                         | /
@@ -208,7 +201,7 @@ html( lang="fr-BE" )
                         em performances
                         | . Je jongle avec javascript depuis des années, et j'adore ça (y en a qui aiment, ce n'est pas sale).
                     p
-                        | Je fais aussi le café, mais j'bois plutôt du Pepsi.
+                        | Je fais aussi le café, mais j'bois plutôt du Pepsi Max.
 
             section#invite
                 div
@@ -247,23 +240,16 @@ html( lang="fr-BE" )
                         a( href="mailto:info@flatland.be" ) mail
                         = " "
                         | ou pigeon voyageur (je n'assure pas les retours de pigeon, mes chats les mangent).
-                    p
-                        | Vous pouvez aussi me trouver régulièrement à
-                        = " "
-                        a( href="http://laforge-coworking.be", rel="external" ) la Forge
-                        = " "
-                        | (espace de coworking Liégeois).
 
             footer
                 p
-                    span ©2013 - hire.flatland.be
+                    span ©2016 - hire.flatland.be
                     = " "
                     a( href="http://flatland.be" ) flatLand!
 
             a#behind( href="http://github.com/leny/angaje" )
                 span consultez le code sur github !
 
-        // script( src="js/script.js", async )
         script.
             var _gaq = _gaq || [];
             _gaq.push( [ '_setAccount', 'UA-39717980-2' ] );

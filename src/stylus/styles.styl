@@ -1,6 +1,6 @@
 /* flatLand! - hire me !
 *
-* SASS/COMPASS/CSS Document - /styles/screen.sass
+* Stylus/CSS Document - /styles/screen.sass
 * Screen & responsive styles
 *
 * coded by leny@flatLand!
@@ -415,10 +415,35 @@ footer
             li
                 margin 0 35px 35px
                 a
+                    transition all .5s ease-in-out
+                    &:before
+                    &:after
+                        transition all .5s ease-in-out
                     &[id="dribbble"]
                         margin 0
                     &[id="linkedin"]
                         margin 0
+                    &:hover
+                        &:before
+                            background gray
+                            transform rotate( 360deg )
+                        &:after
+                            color white
+                    &[id="cv"]:hover
+                        &:before
+                            background white
+                        &:after
+                            color black
+                    &[id="github"]:hover:before
+                        background black
+                    &[id="linkedin"]:hover:before
+                        background #1b86bc
+                    &[id="twitter"]:hover:before
+                        background #1da1f2
+                    &[id="website"]:hover:before
+                        background orange
+                    &[id="dribbble"]:hover:before
+                        background #ea4c89
     [id="behind"]
         display block
         position absolute
